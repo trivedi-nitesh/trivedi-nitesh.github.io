@@ -15,7 +15,6 @@
 <meta property="og:url" content="https://trivedi-nitesh.github.io">
 <meta property="og:image" content="https://raw.githubusercontent.com/trivedi-nitesh/trivedi-nitesh.github.io/main/photo.jpg">
 
-<!-- Google Font: Aakar with fallback -->
 <!-- Google Font: Roboto -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
@@ -106,31 +105,31 @@ header .intro .lab {
 }
 
 .section ol li {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     line-height: 1.4em;
 }
 
-
-/* Sections */
+/* Sections – tighter and with nicer border */
 .section {
     background: #ffffff;
-    padding: 25px 30px;
-    border-radius: 8px;
-    margin-bottom: 30px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease;
-    width: 100%;
+    padding: 15px 25px; /* reduced padding for tighter block */
+    border-radius: 12px;
+    margin-bottom: 20px; /* slightly smaller gap between sections */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    border: 1px solid #d1d5db; /* subtle gray border */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .section:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 
 .section h2 {
     color: #1f487e;
     border-bottom: 2px solid #e0e0e0;
     padding-bottom: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     font-size: 2em;
 }
 
@@ -176,7 +175,7 @@ a:hover {
     <img src="photo.jpeg" alt="Nitesh Trivedi">
     <div class="intro">
         <h1>Nitesh Trivedi</h1>
-        <p><strong>Ph.D. Student</strong>, <span class="dept">Department of Computer Science and Engineering, IIT Kanpur</span></p>
+        <p><span class="dept">Ph.D. Student, Department of Computer Science and Engineering, IIT Kanpur</span></p>
         <p><strong>Email:</strong> <span class="email"><a href="mailto:nitesht@iitk.ac.in">nitesht@iitk.ac.in</a></span></p>
         <p><strong>Lab:</strong> <span class="lab">KD 108</span></p>
     </div>
@@ -213,7 +212,7 @@ I come from Lucknow, a city with a famously amusing food philosophy: chicken is 
 <li>
 <span class="pub-title">Data-driven invariant learning for probabilistic programs</span><br>
 Jialu Bao, <span class="author">Nitesh Trivedi</span>, Drashti Pathak, Justin Hsu, Subhajit Roy<br>
-<em>International Joint Conference on Artificial Intelligence, 2022 (Received Distinguished Paper Award)</em>
+<em>International Joint Conference on Artificial Intelligence, 2022 </em>
 </li>
 
 <li>
@@ -235,7 +234,6 @@ Jialu Bao, <span class="author">Nitesh Trivedi</span>, Drashti Pathak, Justin Hs
 </li>
 </ol>
 </div>
-
 
 </div>
 </body>
