@@ -13,25 +13,25 @@
 body {
     font-family: 'Aakar', 'Roboto', sans-serif;
     margin: 0;
-    padding: 0 20px;
+    padding: 0;
     background-color: #f7f9fc;
     line-height: 1.7;
     color: #222;
-    font-size: 20px; /* slightly larger for better readability */
+    font-size: 20px;
 }
 
-/* Container */
+/* Container stretches full width */
 .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 30px 20px;
+    width: 100%;
+    padding: 20px 40px; /* space from edges */
+    box-sizing: border-box;
 }
 
 /* Header */
 header {
     display: flex;
+    align-items: flex-start;
     flex-wrap: wrap;
-    align-items: center;
     margin-bottom: 40px;
     background: #ffffff;
     padding: 20px 25px;
@@ -40,36 +40,38 @@ header {
 }
 
 header img {
-    width: 120px;
+    width: 100px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-right: 15px;
     margin-bottom: 10px;
     flex-shrink: 0;
 }
 
 header .intro {
     flex: 1;
+    text-align: left;
 }
 
 header h1 {
     color: #1a73e8; /* Highlighted name */
     margin: 0 0 8px 0;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 header p {
     margin: 4px 0;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 /* Sections */
 .section {
     background: #ffffff;
     padding: 25px 30px;
-    border-radius: 12px;
+    border-radius: 8px;
     margin-bottom: 30px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     transition: transform 0.2s ease;
+    width: 100%;
 }
 
 .section:hover {
@@ -81,12 +83,14 @@ header p {
     border-bottom: 2px solid #e0e0e0;
     padding-bottom: 8px;
     margin-bottom: 15px;
+    font-size: 2em;
 }
 
 /* Lists */
 .section ul {
     list-style-type: disc;
     padding-left: 20px;
+    font-size: 1.1em;
 }
 
 /* Links */
@@ -100,11 +104,10 @@ a:hover {
 }
 
 /* Responsive tweaks */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     header {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
     }
 
     header img {
@@ -112,7 +115,7 @@ a:hover {
     }
 
     header .intro p {
-        font-size: 0.95em;
+        font-size: 1em;
     }
 }
 </style>
