@@ -23,7 +23,7 @@ body {
 /* Container stretches full width */
 .container {
     width: 100%;
-    padding: 20px 40px; /* space from edges */
+    padding: 20px 40px;
     box-sizing: border-box;
 }
 
@@ -52,15 +52,26 @@ header .intro {
     text-align: left;
 }
 
+/* Name styling */
 header h1 {
-    color: #1a73e8; /* Highlighted name */
+    color: #8B0000; /* dark red */
+    font-size: 2em;  /* slightly smaller */
     margin: 0 0 8px 0;
-    font-size: 2.5em;
+    text-decoration: underline;
 }
 
-header p {
-    margin: 4px 0;
-    font-size: 1.1em;
+/* Intro paragraphs */
+header .intro p {
+    margin: 2px 0;  /* reduced spacing between lines */
+    font-size: 1.05em;
+}
+
+/* Bold Ph.D. student already handled inline with <strong> */
+
+/* Lab styling */
+header .intro .lab {
+    color: #006400; /* dark green */
+    font-weight: bold;
 }
 
 /* Sections */
@@ -128,11 +139,9 @@ a:hover {
     <img src="photo.jpg" alt="Nitesh Trivedi">
     <div class="intro">
         <h1>Nitesh Trivedi</h1>
-        <p>Ph.D. Student,</p>
-        <p>Department of Computer Science and Engineering,</p>
-        <p>IIT Kanpur</p>
+        <p><strong>Ph.D. Student</strong>, Department of Computer Science and Engineering, IIT Kanpur</p>
         <p>Email: <a href="mailto:nitesht@iitk.ac.in">nitesht@iitk.ac.in</a></p>
-        <p>Lab: KD 108</p>
+        <p>Lab: <span class="lab">KD 108</span></p>
     </div>
 </header>
 
@@ -153,7 +162,6 @@ I come from Lucknow, a city with a famously amusing food philosophy: chicken is 
 <li>Fairness and interpretability in AI</li>
 </ul>
 </div>
-
 
 <div class="section">
 <h2>Publications</h2>
