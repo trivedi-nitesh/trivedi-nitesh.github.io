@@ -52,33 +52,37 @@ header .intro {
     text-align: left;
 }
 
-header .intro .dept {
-    color: #1f487e; /* dark blue */
-    font-weight: normal; /* optional, keeps it normal weight */
-}
-
-
 /* Name styling */
 header h1 {
     color: #8B0000; /* dark red */
-    font-size: 2em;  /* slightly smaller */
+    font-size: 2em;
     margin: 0 0 8px 0;
     text-decoration: underline;
 }
 
 /* Intro paragraphs */
 header .intro p {
-    margin: 2px 0;  /* reduced spacing between lines */
+    margin: 2px 0;  /* reduced spacing */
     font-size: 1.05em;
 }
 
-/* Bold Ph.D. student already handled inline with <strong> */
+/* Department styling */
+header .intro .dept {
+    color: #0B3D91; /* darker blue */
+    font-weight: bold;
+}
+
+/* Email styling */
+header .intro .email {
+    font-weight: bold;
+}
 
 /* Lab styling */
 header .intro .lab {
     color: #006400; /* dark green */
     font-weight: bold;
 }
+
 
 /* Sections */
 .section {
@@ -142,13 +146,14 @@ a:hover {
 <div class="container">
 
 <header>
-    <img src="photo.jpeg" alt="Nitesh Trivedi">
+    <img src="photo.jpg" alt="Nitesh Trivedi">
     <div class="intro">
         <h1>Nitesh Trivedi</h1>
-        <p><strong>Ph.D. Student</strong>,</p>
-        <p><span class="dept">Department of Computer Science and Engineering, IIT Kanpur</span>
+        <p>
+            <strong>Ph.D. Student</strong>, 
+            <span class="dept">Department of Computer Science and Engineering, IIT Kanpur</span>
         </p>
-        <p>Email: <a href="mailto:nitesht@iitk.ac.in">nitesht@iitk.ac.in</a></p>
+        <p>Email: <span class="email"><a href="mailto:nitesht@iitk.ac.in">nitesht@iitk.ac.in</a></span></p>
         <p>Lab: <span class="lab">KD 108</span></p>
     </div>
 </header>
