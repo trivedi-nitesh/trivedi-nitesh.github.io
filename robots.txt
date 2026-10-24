@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://trivedi-nitesh.github.io/sitemap.xml
